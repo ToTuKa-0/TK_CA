@@ -17,7 +17,7 @@ public class TextMove : MonoBehaviour
 
     void Update()
     {
-        changeSpeed = Time.deltaTime * 0.5f;
+        changeSpeed = Time.deltaTime * 0.3f;
 
         if (time < 0)
         {
