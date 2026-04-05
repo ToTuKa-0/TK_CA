@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CangeScene : MonoBehaviour
 {
-    [SerializeField] string SceneName;
+    [SerializeField, Tooltip("”ò‚ÔƒV[ƒ“–¼‚ğ“ü‚ê‚é")] string SceneName;
 
     // Update is called once per frame
     void Update()

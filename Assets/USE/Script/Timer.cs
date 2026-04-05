@@ -10,8 +10,9 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float timeLimit;
+    [SerializeField,Tooltip("動かすTextをアタッチ")] TextMeshProUGUI timerText;
+    [SerializeField, Tooltip("次に飛ぶCanvasをアタッチ")] GameObject timeUpCanvas;
+    [SerializeField, Tooltip("制限時間")] float timeLimit;
 
     bool isCounting = false;
 
@@ -19,6 +20,8 @@ public class Timer : MonoBehaviour
     public void StartTimer()
     {
         isCounting = true;
+
+        timeUpCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -32,6 +35,8 @@ public class Timer : MonoBehaviour
         {
             timeLimit = 0;
             isCounting = false;
+
+            timeUpCanvas.SetActive(true);
         }
 
         timerText.text = timeLimit.ToString("F0");

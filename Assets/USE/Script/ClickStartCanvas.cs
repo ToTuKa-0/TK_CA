@@ -7,8 +7,8 @@ using UnityEngine;
 
 public class ClickStartCanvas : MonoBehaviour
 {
-    public GameObject canvas;
-    public Timer timer;
+    [Tooltip("非表示にするキャンバスをアタッチ")] public GameObject canvas;
+    [Tooltip("Timerのついてるオブジェクトをアタッチ")] public Timer timer;
 
     public void Hide()
     {
