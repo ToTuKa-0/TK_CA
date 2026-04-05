@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// クリックでシーン移行
+/// 画面左クリックでシーン移行
 /// </summary>
 
-public class ClickChange : MonoBehaviour
+public class CangeScene : MonoBehaviour
 {
     [SerializeField] string SceneName;
 

@@ -2,12 +2,13 @@ using UnityEngine;
 
 /// <summary>
 /// ボタンクリックでキャンバスが非表示になる
+/// ボタンに設定
 /// </summary>
 
-public class ClickCanvas : MonoBehaviour
+public class ClickStartCanvas : MonoBehaviour
 {
     public GameObject canvas;
-    public TimeCount timeCount;
+    public Timer timer;
 
     public void Hide()
     {
@@ -15,9 +16,9 @@ public class ClickCanvas : MonoBehaviour
         {
             canvas.SetActive(false);
 
-            if (timeCount != null)
+            if (timer != null)
             {
-                timeCount.StartTimer();
+                timer.StartTimer();
             }
         }
     }

@@ -2,10 +2,11 @@ using UnityEngine;
 
 /// <summary>
 /// Textが動く
+/// 動かしたいやつにアタッチ
 /// https://zenn.dev/daichi_gamedev/articles/69471ad4a91029
 /// </summary>
 
-public class TextMove : MonoBehaviour
+public class MoveText : MonoBehaviour
 {
     float time, changeSpeed;
     bool move;

@@ -5,10 +5,10 @@ using UnityEngine;
 /// https://osakanagames.com/blog/countdowntimer/
 /// キャンバス消えたら動くタイマー
 /// 0になったら答えを表示
-/// カウントダウンが少し早いため少し長めに秒数を設定
+/// 答え書くキャンバスも表示
 /// </summary>
 
-public class TimeCount : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float timeLimit;
@@ -26,16 +26,14 @@ public class TimeCount : MonoBehaviour
     {
         if (!isCounting) return;
 
-        timeLimit-= Time.deltaTime;
+        timeLimit -= Time.deltaTime;
 
-            timeLimit -= Time.deltaTime;
-
-            if (timeLimit < 0)
-            {
-                timeLimit = 0;
+        if (timeLimit < 0)
+        {
+            timeLimit = 0;
             isCounting = false;
-            }
+        }
 
-            timerText.text = timeLimit.ToString("F0");
+        timerText.text = timeLimit.ToString("F0");
     }
 }
