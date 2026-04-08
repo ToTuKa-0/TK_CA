@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e58c318a6b511e4c9577b8e80ac44de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CangeScene
-  SceneName: a0
+  SceneName: a0 1
 --- !u!1 &1429331052
 GameObject:
   m_ObjectHideFlags: 0
